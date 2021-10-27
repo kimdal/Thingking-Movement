@@ -6,10 +6,10 @@ let Lump = [];
 
 function setup() {
   createCanvas(640, 360);
-  
+
   for (let i=0; i < 50; i++){
   Abstract[i] = new abstract();
-    
+
     for (let i=0; i < 100; i++){
   Shape[i] = new shape();
   }
@@ -46,6 +46,7 @@ function draw() {
   Lump[i].update();
   Lump[i].display();
   Lump[i].lumpEdges();
+  Lump[i].keyReleased();
   }
-  
+
 }

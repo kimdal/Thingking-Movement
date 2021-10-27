@@ -6,7 +6,7 @@ class lump{
   this.topspeed = 5;
   this.w = 20;
   }
-  
+
   update(){
   let mouse = createVector(mouseX, mouseY);
     this.acc = p5.Vector.sub(mouse, this.pos);
@@ -14,12 +14,12 @@ class lump{
   this.vel.add(this.acc);
   this.vel.limit(this.topspeed);
   this.pos.add(this.vel);
-  
+
   }
-  
+
   display(){
   fill(random(0,250), random(0, 150), random(0, 250));
-  ellipse(this.pos.x, this.pos.y, this.w); 
+  ellipse(this.pos.x, this.pos.y, this.w);
   }
   lumpEdges(){
     noFill();
@@ -32,5 +32,8 @@ class lump{
       if ((this.pos.x > 425)|| (this.pos.x <205)) {
         this.vel.x = this.vel.x*-1;
   }
+}
+keyReleased(){
+  if(key == '1') this.w = random(-5, 5);
 }
 }
