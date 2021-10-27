@@ -35,5 +35,7 @@ class lump{
 }
 keyReleased(){
   if(key == '1') this.w = random(-5, 5);
+  if(key == '2') this.w = random(5, 10);
+  if(key == '3') this.w = random(10, 20);
 }
 }
