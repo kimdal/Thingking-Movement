@@ -11,7 +11,7 @@ class abstract{
   update(){
   let mouse = createVector(mouseX, mouseY);
   this.acc = p5.Vector.sub(mouse, this.pos);
-  this.acc.setMag(0.5);
+  this.acc.setMag(50);
   this.vel.add(this.acc);
   this.vel.limit(this.topspeed);
   this.pos.add(this.vel);
