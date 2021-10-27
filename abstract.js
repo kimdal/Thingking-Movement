@@ -1,17 +1,17 @@
 class abstract{
   constructor(){
   this.pos = createVector(random(width), random(height));
-    this.vel = createVector(random(-2, 2), random(-2, 2));
+    this.vel = createVector(random(-10, 10), random(-10, 10));
     this.acc = createVector();
-    this.w = random(-10, 50);
-    this.topspeed = 5;
+    this.w = random(50, 100);
+    this.topspeed = 10;
   }
 
 
   update(){
   let mouse = createVector(mouseX, mouseY);
   this.acc = p5.Vector.sub(mouse, this.pos);
-  this.acc.setMag(0.2);
+  this.acc.setMag(0.5);
   this.vel.add(this.acc);
   this.vel.limit(this.topspeed);
   this.pos.add(this.vel);
