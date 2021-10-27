@@ -2,7 +2,7 @@ class abstract{
   constructor(){
   this.pos = createVector(random(width), random(height));
     this.vel = createVector(random(-2, 2), random(-2, 2));
-    // this.acc = createVector(random(-0.1, 0.1),random(-0.1, 0.1));
+    this.acc = createVector();
     this.w = random(-10, 50);
     this.topspeed = 5;
   }
