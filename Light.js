@@ -1,4 +1,4 @@
-class abstract{
+class light{
   constructor(){
   this.pos = createVector(0, 0);
     this.vel = createVector(random(-10, 10), random(-10, 10));

@@ -18,7 +18,7 @@ class lump{
   }
 
   display(){
-  fill(random(0,250), random(0, 150), random(0, 250));
+  fill(0, random(0, 250), random(0, 250));
   ellipse(this.pos.x, this.pos.y, this.w);
   }
   lumpEdges(){
