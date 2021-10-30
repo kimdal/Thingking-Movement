@@ -1,6 +1,7 @@
 let Light = [];
 let Shape = [];
 let Lump = [];
+let Flare;
 
 
 
@@ -17,6 +18,7 @@ function setup() {
   // for (let i=0; i < 50; i++){
   // Lump[i] = new lump();
   // }
+  Flare = new flare();
 }
   function mousePressed(){
     let L = new lump(mouseX, mouseY);
@@ -48,5 +50,6 @@ function draw() {
   Lump[i].lumpEdges();
   Lump[i].keyReleased();
   }
-
+Flare.display();
+Flare.mouseDragged();
 }
