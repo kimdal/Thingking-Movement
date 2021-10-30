@@ -6,16 +6,16 @@ class flare{
 
 
 display(){
-  fill(200);
+  fill(200, 50);
   strokeWeight(5);
-  erase(15, 150);
+  erase(40, 150);
   ellipse(this.pos.x, this.pos.y, this.w);
   noErase();
 }
 
 doubleClicked(){
   this.w = this.w*1.2;
-  filter(BLUR, 0.5);
+  filter(BLUR, 1);
 
 if (this.w > 200){
   this.w = this.w*-1.2;
