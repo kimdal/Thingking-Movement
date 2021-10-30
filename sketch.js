@@ -51,5 +51,5 @@ function draw() {
   Lump[i].keyReleased();
   }
 Flare.display();
-Flare.mouseDragged();
+Flare.doubleClicked();
 }
