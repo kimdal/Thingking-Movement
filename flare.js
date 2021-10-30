@@ -16,5 +16,13 @@ display(){
 doubleClicked(){
   this.w = this.w*1.2;
   filter(BLUR, 0.5);
+
+if (this.w > 200){
+  this.w = this.w*-1.2;
+  // fill(0);
+  // erase(0, 0);
+  // noErase();
+  // filter(BLUR, 0);
+}
 }
 }
