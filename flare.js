@@ -1,7 +1,7 @@
 class flare{
   constructor(){
-    this.pos = createVector(0, 0);
-    this.w =100;
+    this.pos = createVector(-5, -5);
+    this.w =10;
   }
 
 
@@ -13,16 +13,28 @@ display(){
   noErase();
 }
 
-doubleClicked(){
-  this.w = this.w*1.2;
-  filter(BLUR, 1);
+// doubleClicked(){
+//   this.w = this.w*1.2;
+//   filter(BLUR, 1);
+//
+// if (this.w > 200){
+//   this.w = this.w*-1.2;
 
-if (this.w > 200){
-  this.w = this.w*-1.2;
   // fill(0);
   // erase(0, 0);
   // noErase();
   // filter(BLUR, 0);
+//}
+
+keyReleased(){
+  if(key == '0'){
+    this.w = this.w*1.2;
+    filter(BLUR, 1);
+
+  if (this.w > 200){
+    this.w = this.w*-1.2;
+
+}
 }
 }
 }
