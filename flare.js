@@ -31,10 +31,10 @@ keyReleased(){
     this.w = this.w*1.2;
     filter(BLUR, 1);
 
-  if (this.w > 200){
-    this.w = this.w*-1.2;
-
-}
+//   if (this.w > 200){
+//     this.w = this.w*-1.2;
+//
+// }
 }
 }
 }
