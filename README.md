@@ -1,2 +1,2 @@
-# Thingking-Movement
+# Movement of Thingking
 Poetic Movement Project
